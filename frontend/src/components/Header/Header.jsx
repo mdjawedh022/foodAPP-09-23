@@ -14,6 +14,8 @@ const Header = () => {
 <ul>
   <li><Link to="/"><i className="bi bi-geo-alt-fill"></i> Store Locator</Link></li>
   <li><Link to="/"><i class="bi bi-person-fill"></i>Signin/Register</Link></li>
+  <li><Link to="/">My Account</Link></li>
+  <li><Link to="/">Logout</Link></li>
 </ul>
 </div>
    </div>
