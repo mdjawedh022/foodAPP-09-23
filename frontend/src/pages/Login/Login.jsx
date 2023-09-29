@@ -1,11 +1,15 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footers from "../../components/Footer/Footers";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
-  return (
+//     const navigate=useNavigate()
+//   const handlereg=()=>{
+//     navigate('/register')
+//   }
+    return (
     <>
       <Header />
       
@@ -17,7 +21,7 @@ const Login = () => {
         <h1>LOGIN WITH SOCIAL LINKS</h1>
       </div>
             <p>
-              If new user <Link to="/">Register</Link>
+              If new user <Link to="/register">Register</Link>
             </p>
             <hr />
             <button className="btn btn-danger d-block w-100 mb-2">
@@ -57,7 +61,7 @@ const Login = () => {
         <h1>NEW CUSTOMER</h1>
       </div>
       <p>By creating an account with us, purchasing on our website becomes much faster and easier.</p>
-      <button type="button" className="btn btn-outline-danger">NEW CUSTOMER</button>
+      <Link to='/register'  className="btn btn-outline-danger">NEW CUSTOMER</Link>
           </div>
         </div>
       </div>

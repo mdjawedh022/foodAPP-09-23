@@ -2,7 +2,7 @@
 import React from 'react'
 import "./footer.css"
 import { Link } from 'react-router-dom'
-const FooterS = () => {
+const Footers = () => {
   return (
     <div className='footer-wrapper'>
       <img className='footer-logo' src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt="" />
@@ -84,4 +84,4 @@ const FooterS = () => {
   )
 }
 
-export default FooterS
+export default Footers
