@@ -1,22 +1,27 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Main from './components/Main/Main';
-// import Header from './components/Header/Header';
-// import Navbar from './components/Nav/Navbar';
+import Header from './components/Header/Header';
+import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import Product from './pages/Product/Product';
+import Order from './pages/Order/Order';
 
 function App() {
   return (
-    <div className="App">
-    {/* <Header/>
+    <>
+    <Header/>
     <div class="container-fluid">
-  <div class="row">
-    <Navbar/>
-    <Main/>
-  </div>  
-  </div> */}
-  <Login/>
+    <div class="row">
+    <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/product" element={<Product/>}/>
+      <Route path="/order" element={<Order/>}/>
+    </Routes>
+    </div>  
     </div>
+    </>
   );
 }
 

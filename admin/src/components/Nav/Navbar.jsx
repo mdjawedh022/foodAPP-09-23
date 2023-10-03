@@ -7,19 +7,19 @@ import {Link}from "react-router-dom";
       <div className="position-sticky pt-3 sidebar-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">
+            <Link className="nav-link active" aria-current="page" to="/home">
               <span data-feather="home" className="align-text-bottom"></span>
               Dashboard
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/order">
               <span data-feather="file" className="align-text-bottom"></span>
               Orders
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/product">
               <span data-feather="shopping-cart" className="align-text-bottom"></span>
               Products
             </Link>
