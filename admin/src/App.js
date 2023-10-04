@@ -11,8 +11,8 @@ function App() {
   return (
     <>
     <Header/>
-    <div class="container-fluid">
-    <div class="row">
+    <div className="container-fluid">
+    <div className="row">
     <Routes>
       <Route path="/" element={<Login/>}/>
       <Route path="/home" element={<Home/>}/>
